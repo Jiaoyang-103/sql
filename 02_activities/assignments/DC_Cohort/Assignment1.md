@@ -211,3 +211,9 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 ```
 Your thoughts...
 ```
+The article reminds me of a very rigid schema I experienced when I was applying for my US visa. Applying US visa requires applicant fill out a form call DS160. In this form, applicants are required to provide personal information throughout their life, and this process usually takes hours. Therefore, the system was designed to have a retrieve function where applicants can stop in the middle and retrieve the form to work on the rest. This retrieve function asks for the application ID, security questions, as well as the first 3 letters of the applicant's last name. And that's where the problem comes in: my last name only has 2 letters. I tried different ways to fill in the required letters but was never able to retrieve the form that I had been working on for hours already. I searched the issue online and noticed many people had the same frustration in the past, simply because they have an "abnormal" last name. In the end, I created a new form, sat down for hours, and completed the form in one breath. 
+
+The system assumes that a "normal" name contains at least 3 letters, following naming conventions for European and English names. But it overlooked other cultures where 2 letter last names exist. Applying for a visa costs time and is stressful, and a mistake can affect a visa decision. People with “standard” names never face this. There are so many actions that can be done, for example, accepting a last name with more than 1 letter, or using a birthdate instead of a last name, etc. This shows that a database’s validation rules are not neutral.
+
+
+
