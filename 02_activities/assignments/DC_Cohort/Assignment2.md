@@ -59,7 +59,9 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 ```
 Your answer...
 ```
+Type 1 (overwrite): CUSTOMER_ADDRESS has one row per customer: customer_id, street, city, postal_code. When the customer moves, I replace the old address with the new one. It is simple and saves space, but the old address is lost.
 
+Type 2 (keep history): CUSTOMER_ADDRESS has address_id, customer_id, street, city, postal_code, and current_yes_or_no. When the customer moves, I keep the old row and mark it as not current, then add a new row for the new address. This way I can track all the addresses a customer has had, but it costs extra space to store information that may no longer be needed.
 ***
 
 ## Section 2:
@@ -194,3 +196,4 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 ```
 Your thoughts...
 ```
+I personally had one experience of being “invisible cheap human labour.” My friend, a PhD student in computer science, was developing an image processing model. Her model was supposed to improve the resolution of an image without adding to, deleting, resizing, or distorting its original content. My job was to compare about 100 images and choose which model, hers or ones from other researchers, worked best in my own eyes. At the beginning I was very focused, but I soon got bored and my eyes became sore, and I am sure I was not as careful by the end as I was at the start. Afterwards, she told me I was one of the best performers in the test, because I had chosen her model. She mentioned that some people performed very “badly.” If “good” performance meant choosing her model, then the test was measuring agreement with the researcher’s hopes rather than how observant the participants were. The results also depended on each participant’s patience, eyesight, and fatigue, and most of us were her friends, who might have wanted her model to win. By contrast, ImageNet checked its workers’ attention using control images whose correct answers were already known. Her paper was published, and I am one of the “N participants” in her study: essential to the results (proudly to drag her significance up), but not named. This is not unique to her research. LLM chatbots are trained by human raters who pick the better of two answers, which is exactly what I did, just with text instead of images. Content moderation also depends on low-paid workers who review content for hours. Like the Mechanical Turk workers behind ImageNet, this cheap labour, including mine, is rarely recognized. A published claim like “our model outperforms other models” looks objective, but it rests on the judgments of tired, possibly biased, and invisible humans like me. As the article suggests, it is people all the way down.
